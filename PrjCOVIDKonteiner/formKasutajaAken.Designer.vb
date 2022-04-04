@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class formKasutajaAken
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,11 @@ Partial Class formKasutajaAken
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.btnLeia = New System.Windows.Forms.Button()
         Me.lblSeePaev = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -35,6 +38,9 @@ Partial Class formKasutajaAken
         Me.cbMaakond = New System.Windows.Forms.ComboBox()
         Me.lblNextDay = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.chrtNakatunud = New System.Windows.Forms.DataVisualization.Charting.Chart()
+        Me.lblEelmine = New System.Windows.Forms.Label()
+        CType(Me.chrtNakatunud, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnLeia
@@ -152,11 +158,38 @@ Partial Class formKasutajaAken
         Me.Label5.TabIndex = 12
         Me.Label5.Text = "Next Day:"
         '
+        'chrtNakatunud
+        '
+        ChartArea2.Name = "ChartArea1"
+        Me.chrtNakatunud.ChartAreas.Add(ChartArea2)
+        Legend2.Name = "Legend1"
+        Me.chrtNakatunud.Legends.Add(Legend2)
+        Me.chrtNakatunud.Location = New System.Drawing.Point(643, 24)
+        Me.chrtNakatunud.Name = "chrtNakatunud"
+        Series2.ChartArea = "ChartArea1"
+        Series2.Legend = "Legend1"
+        Series2.Name = "Nakatunud"
+        Me.chrtNakatunud.Series.Add(Series2)
+        Me.chrtNakatunud.Size = New System.Drawing.Size(721, 502)
+        Me.chrtNakatunud.TabIndex = 13
+        Me.chrtNakatunud.Text = "Chart1"
+        '
+        'lblEelmine
+        '
+        Me.lblEelmine.AutoSize = True
+        Me.lblEelmine.Location = New System.Drawing.Point(375, 434)
+        Me.lblEelmine.Name = "lblEelmine"
+        Me.lblEelmine.Size = New System.Drawing.Size(77, 25)
+        Me.lblEelmine.TabIndex = 14
+        Me.lblEelmine.Text = "Label6"
+        '
         'formKasutajaAken
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1533, 658)
+        Me.Controls.Add(Me.lblEelmine)
+        Me.Controls.Add(Me.chrtNakatunud)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.lblNextDay)
         Me.Controls.Add(Me.cbMaakond)
@@ -172,6 +205,7 @@ Partial Class formKasutajaAken
         Me.Controls.Add(Me.btnLeia)
         Me.Name = "formKasutajaAken"
         Me.Text = "COVID andmed"
+        CType(Me.chrtNakatunud, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -190,4 +224,6 @@ Partial Class formKasutajaAken
     Friend WithEvents cbMaakond As ComboBox
     Friend WithEvents lblNextDay As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents chrtNakatunud As DataVisualization.Charting.Chart
+    Friend WithEvents lblEelmine As Label
 End Class
