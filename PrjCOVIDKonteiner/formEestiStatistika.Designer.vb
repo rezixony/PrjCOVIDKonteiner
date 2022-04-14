@@ -22,42 +22,73 @@ Partial Class formEestiStatistika
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.CartesianChart1 = New LiveCharts.WinForms.CartesianChart()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.clndrKuupaev = New Guna.UI2.WinForms.Guna2DateTimePicker()
-        Me.lblNextDay = New System.Windows.Forms.Label()
-        Me.lblPerPopulation = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.lblSeePaev = New System.Windows.Forms.Label()
-        Me.lbl14p = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.lblTotalCases = New System.Windows.Forms.Label()
+        Me.kjlkj = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
+        Me.Guna2TextBox4 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox5 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox6 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox7 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.lblDailyCases = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.lblTotalCases = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.lbl14p = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.lblPerPopulation = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.lblNextDay = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2Panel1
         '
-        Me.Guna2Panel1.Controls.Add(Me.Guna2TextBox1)
-        Me.Guna2Panel1.Controls.Add(Me.CartesianChart1)
-        Me.Guna2Panel1.Controls.Add(Me.Label5)
-        Me.Guna2Panel1.Controls.Add(Me.clndrKuupaev)
         Me.Guna2Panel1.Controls.Add(Me.lblNextDay)
         Me.Guna2Panel1.Controls.Add(Me.lblPerPopulation)
-        Me.Guna2Panel1.Controls.Add(Me.Label1)
-        Me.Guna2Panel1.Controls.Add(Me.Label4)
-        Me.Guna2Panel1.Controls.Add(Me.lblSeePaev)
         Me.Guna2Panel1.Controls.Add(Me.lbl14p)
-        Me.Guna2Panel1.Controls.Add(Me.Label2)
-        Me.Guna2Panel1.Controls.Add(Me.Label3)
         Me.Guna2Panel1.Controls.Add(Me.lblTotalCases)
+        Me.Guna2Panel1.Controls.Add(Me.lblDailyCases)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2TextBox7)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2TextBox6)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2TextBox5)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2TextBox4)
+        Me.Guna2Panel1.Controls.Add(Me.kjlkj)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2TextBox2)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2TextBox1)
+        Me.Guna2Panel1.Controls.Add(Me.CartesianChart1)
+        Me.Guna2Panel1.Controls.Add(Me.clndrKuupaev)
         Me.Guna2Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(1149, 671)
         Me.Guna2Panel1.TabIndex = 0
+        '
+        'Guna2TextBox2
+        '
+        Me.Guna2TextBox2.AutoRoundedCorners = True
+        Me.Guna2TextBox2.BorderRadius = 29
+        Me.Guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox2.DefaultText = "Valige soovitud kuupäeva:"
+        Me.Guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.Guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox2.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
+        Me.Guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox2.Location = New System.Drawing.Point(319, 124)
+        Me.Guna2TextBox2.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Guna2TextBox2.Name = "Guna2TextBox2"
+        Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.Guna2TextBox2.PlaceholderText = ""
+        Me.Guna2TextBox2.ReadOnly = True
+        Me.Guna2TextBox2.SelectedText = ""
+        Me.Guna2TextBox2.Size = New System.Drawing.Size(257, 60)
+        Me.Guna2TextBox2.TabIndex = 47
+        Me.Guna2TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Guna2TextBox1
         '
@@ -79,6 +110,7 @@ Partial Class formEestiStatistika
         Me.Guna2TextBox1.Name = "Guna2TextBox1"
         Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox1.PlaceholderText = ""
+        Me.Guna2TextBox1.ReadOnly = True
         Me.Guna2TextBox1.SelectedText = ""
         Me.Guna2TextBox1.Size = New System.Drawing.Size(525, 106)
         Me.Guna2TextBox1.TabIndex = 46
@@ -86,128 +118,298 @@ Partial Class formEestiStatistika
         '
         'CartesianChart1
         '
-        Me.CartesianChart1.Location = New System.Drawing.Point(360, 317)
+        Me.CartesianChart1.Location = New System.Drawing.Point(319, 195)
         Me.CartesianChart1.Name = "CartesianChart1"
-        Me.CartesianChart1.Size = New System.Drawing.Size(227, 170)
+        Me.CartesianChart1.Size = New System.Drawing.Size(554, 265)
         Me.CartesianChart1.TabIndex = 33
         Me.CartesianChart1.Text = "CartesianChart1"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(605, 355)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(54, 13)
-        Me.Label5.TabIndex = 29
-        Me.Label5.Text = "Next Day:"
         '
         'clndrKuupaev
         '
         Me.clndrKuupaev.AutoRoundedCorners = True
-        Me.clndrKuupaev.BorderRadius = 23
+        Me.clndrKuupaev.BorderRadius = 29
         Me.clndrKuupaev.Checked = True
-        Me.clndrKuupaev.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.clndrKuupaev.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(186, Byte))
+        Me.clndrKuupaev.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.clndrKuupaev.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(186, Byte))
         Me.clndrKuupaev.ForeColor = System.Drawing.Color.DarkOrchid
         Me.clndrKuupaev.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.clndrKuupaev.Location = New System.Drawing.Point(473, 166)
+        Me.clndrKuupaev.Location = New System.Drawing.Point(584, 124)
         Me.clndrKuupaev.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
         Me.clndrKuupaev.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
         Me.clndrKuupaev.Name = "clndrKuupaev"
-        Me.clndrKuupaev.Size = New System.Drawing.Size(245, 48)
+        Me.clndrKuupaev.Size = New System.Drawing.Size(245, 60)
         Me.clndrKuupaev.TabIndex = 30
         Me.clndrKuupaev.Value = New Date(2022, 4, 12, 0, 0, 0, 0)
         '
-        'lblNextDay
+        'kjlkj
         '
-        Me.lblNextDay.AutoSize = True
-        Me.lblNextDay.Location = New System.Drawing.Point(695, 355)
-        Me.lblNextDay.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblNextDay.Name = "lblNextDay"
-        Me.lblNextDay.Size = New System.Drawing.Size(23, 13)
-        Me.lblNextDay.TabIndex = 28
-        Me.lblNextDay.Text = "Arv"
+        Me.kjlkj.AutoRoundedCorners = True
+        Me.kjlkj.BorderRadius = 29
+        Me.kjlkj.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.kjlkj.DefaultText = "Nakatunud:"
+        Me.kjlkj.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.kjlkj.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.kjlkj.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.kjlkj.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.kjlkj.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.kjlkj.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.kjlkj.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
+        Me.kjlkj.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.kjlkj.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.kjlkj.Location = New System.Drawing.Point(43, 132)
+        Me.kjlkj.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.kjlkj.Name = "kjlkj"
+        Me.kjlkj.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.kjlkj.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.kjlkj.PlaceholderText = ""
+        Me.kjlkj.ReadOnly = True
+        Me.kjlkj.SelectedText = ""
+        Me.kjlkj.Size = New System.Drawing.Size(143, 60)
+        Me.kjlkj.TabIndex = 48
+        Me.kjlkj.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'lblPerPopulation
+        'Guna2TextBox4
         '
-        Me.lblPerPopulation.AutoSize = True
-        Me.lblPerPopulation.Location = New System.Drawing.Point(699, 315)
-        Me.lblPerPopulation.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblPerPopulation.Name = "lblPerPopulation"
-        Me.lblPerPopulation.Size = New System.Drawing.Size(23, 13)
-        Me.lblPerPopulation.TabIndex = 27
-        Me.lblPerPopulation.Text = "Arv"
+        Me.Guna2TextBox4.AutoRoundedCorners = True
+        Me.Guna2TextBox4.BorderRadius = 29
+        Me.Guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox4.DefaultText = "Kokku:"
+        Me.Guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox4.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.Guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox4.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
+        Me.Guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.Guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox4.Location = New System.Drawing.Point(43, 219)
+        Me.Guna2TextBox4.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Guna2TextBox4.Name = "Guna2TextBox4"
+        Me.Guna2TextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox4.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.Guna2TextBox4.PlaceholderText = ""
+        Me.Guna2TextBox4.ReadOnly = True
+        Me.Guna2TextBox4.SelectedText = ""
+        Me.Guna2TextBox4.Size = New System.Drawing.Size(143, 60)
+        Me.Guna2TextBox4.TabIndex = 49
+        Me.Guna2TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label1
+        'Guna2TextBox5
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(571, 235)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 13)
-        Me.Label1.TabIndex = 21
-        Me.Label1.Text = "Sellel paeval"
+        Me.Guna2TextBox5.AutoRoundedCorners = True
+        Me.Guna2TextBox5.BorderRadius = 29
+        Me.Guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox5.DefaultText = "Viimased 14p:"
+        Me.Guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox5.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.Guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox5.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
+        Me.Guna2TextBox5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.Guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox5.Location = New System.Drawing.Point(43, 312)
+        Me.Guna2TextBox5.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Guna2TextBox5.Name = "Guna2TextBox5"
+        Me.Guna2TextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox5.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.Guna2TextBox5.PlaceholderText = ""
+        Me.Guna2TextBox5.ReadOnly = True
+        Me.Guna2TextBox5.SelectedText = ""
+        Me.Guna2TextBox5.Size = New System.Drawing.Size(143, 60)
+        Me.Guna2TextBox5.TabIndex = 50
+        Me.Guna2TextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'Label4
+        'Guna2TextBox6
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(583, 315)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(75, 13)
-        Me.Label4.TabIndex = 26
-        Me.Label4.Text = "Per population"
+        Me.Guna2TextBox6.AutoRoundedCorners = True
+        Me.Guna2TextBox6.BorderRadius = 29
+        Me.Guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox6.DefaultText = "Per population:"
+        Me.Guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox6.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.Guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox6.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
+        Me.Guna2TextBox6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.Guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox6.Location = New System.Drawing.Point(881, 263)
+        Me.Guna2TextBox6.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Guna2TextBox6.Name = "Guna2TextBox6"
+        Me.Guna2TextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox6.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.Guna2TextBox6.PlaceholderText = ""
+        Me.Guna2TextBox6.ReadOnly = True
+        Me.Guna2TextBox6.SelectedText = ""
+        Me.Guna2TextBox6.Size = New System.Drawing.Size(152, 60)
+        Me.Guna2TextBox6.TabIndex = 51
+        Me.Guna2TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'lblSeePaev
+        'Guna2TextBox7
         '
-        Me.lblSeePaev.AutoSize = True
-        Me.lblSeePaev.Location = New System.Drawing.Point(651, 235)
-        Me.lblSeePaev.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblSeePaev.Name = "lblSeePaev"
-        Me.lblSeePaev.Size = New System.Drawing.Size(23, 13)
-        Me.lblSeePaev.TabIndex = 20
-        Me.lblSeePaev.Text = "Arv"
+        Me.Guna2TextBox7.AutoRoundedCorners = True
+        Me.Guna2TextBox7.BorderRadius = 29
+        Me.Guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox7.DefaultText = "Järgmine päev:"
+        Me.Guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox7.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.Guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox7.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
+        Me.Guna2TextBox7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.Guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox7.Location = New System.Drawing.Point(881, 347)
+        Me.Guna2TextBox7.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Guna2TextBox7.Name = "Guna2TextBox7"
+        Me.Guna2TextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox7.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.Guna2TextBox7.PlaceholderText = ""
+        Me.Guna2TextBox7.ReadOnly = True
+        Me.Guna2TextBox7.SelectedText = ""
+        Me.Guna2TextBox7.Size = New System.Drawing.Size(152, 60)
+        Me.Guna2TextBox7.TabIndex = 52
+        Me.Guna2TextBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'lbl14p
+        'lblDailyCases
         '
-        Me.lbl14p.AutoSize = True
-        Me.lbl14p.Location = New System.Drawing.Point(699, 289)
-        Me.lbl14p.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lbl14p.Name = "lbl14p"
-        Me.lbl14p.Size = New System.Drawing.Size(23, 13)
-        Me.lbl14p.TabIndex = 25
-        Me.lbl14p.Text = "Arv"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(571, 260)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(38, 13)
-        Me.Label2.TabIndex = 22
-        Me.Label2.Text = "Kokku"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(583, 288)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(100, 13)
-        Me.Label3.TabIndex = 24
-        Me.Label3.Text = "Viimase 14p jooksul"
+        Me.lblDailyCases.AutoRoundedCorners = True
+        Me.lblDailyCases.BorderRadius = 29
+        Me.lblDailyCases.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.lblDailyCases.DefaultText = "Arv"
+        Me.lblDailyCases.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.lblDailyCases.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.lblDailyCases.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lblDailyCases.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lblDailyCases.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.lblDailyCases.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lblDailyCases.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
+        Me.lblDailyCases.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.lblDailyCases.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lblDailyCases.Location = New System.Drawing.Point(196, 132)
+        Me.lblDailyCases.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.lblDailyCases.Name = "lblDailyCases"
+        Me.lblDailyCases.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.lblDailyCases.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.lblDailyCases.PlaceholderText = ""
+        Me.lblDailyCases.ReadOnly = True
+        Me.lblDailyCases.SelectedText = ""
+        Me.lblDailyCases.Size = New System.Drawing.Size(81, 60)
+        Me.lblDailyCases.TabIndex = 53
+        Me.lblDailyCases.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'lblTotalCases
         '
-        Me.lblTotalCases.AutoSize = True
-        Me.lblTotalCases.Location = New System.Drawing.Point(651, 260)
-        Me.lblTotalCases.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.lblTotalCases.AutoRoundedCorners = True
+        Me.lblTotalCases.BorderRadius = 29
+        Me.lblTotalCases.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.lblTotalCases.DefaultText = "Arv"
+        Me.lblTotalCases.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.lblTotalCases.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.lblTotalCases.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lblTotalCases.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lblTotalCases.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.lblTotalCases.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lblTotalCases.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
+        Me.lblTotalCases.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.lblTotalCases.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lblTotalCases.Location = New System.Drawing.Point(196, 219)
+        Me.lblTotalCases.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.lblTotalCases.Name = "lblTotalCases"
-        Me.lblTotalCases.Size = New System.Drawing.Size(23, 13)
-        Me.lblTotalCases.TabIndex = 23
-        Me.lblTotalCases.Text = "Arv"
+        Me.lblTotalCases.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.lblTotalCases.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.lblTotalCases.PlaceholderText = ""
+        Me.lblTotalCases.ReadOnly = True
+        Me.lblTotalCases.SelectedText = ""
+        Me.lblTotalCases.Size = New System.Drawing.Size(81, 60)
+        Me.lblTotalCases.TabIndex = 54
+        Me.lblTotalCases.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lbl14p
+        '
+        Me.lbl14p.AutoRoundedCorners = True
+        Me.lbl14p.BorderRadius = 29
+        Me.lbl14p.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.lbl14p.DefaultText = "Arv"
+        Me.lbl14p.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.lbl14p.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.lbl14p.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lbl14p.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lbl14p.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.lbl14p.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lbl14p.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
+        Me.lbl14p.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.lbl14p.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lbl14p.Location = New System.Drawing.Point(196, 312)
+        Me.lbl14p.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.lbl14p.Name = "lbl14p"
+        Me.lbl14p.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.lbl14p.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.lbl14p.PlaceholderText = ""
+        Me.lbl14p.ReadOnly = True
+        Me.lbl14p.SelectedText = ""
+        Me.lbl14p.Size = New System.Drawing.Size(81, 60)
+        Me.lbl14p.TabIndex = 55
+        Me.lbl14p.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblPerPopulation
+        '
+        Me.lblPerPopulation.AutoRoundedCorners = True
+        Me.lblPerPopulation.BorderRadius = 29
+        Me.lblPerPopulation.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.lblPerPopulation.DefaultText = "Arv"
+        Me.lblPerPopulation.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.lblPerPopulation.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.lblPerPopulation.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lblPerPopulation.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lblPerPopulation.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.lblPerPopulation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lblPerPopulation.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
+        Me.lblPerPopulation.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.lblPerPopulation.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lblPerPopulation.Location = New System.Drawing.Point(1043, 263)
+        Me.lblPerPopulation.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.lblPerPopulation.Name = "lblPerPopulation"
+        Me.lblPerPopulation.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.lblPerPopulation.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.lblPerPopulation.PlaceholderText = ""
+        Me.lblPerPopulation.ReadOnly = True
+        Me.lblPerPopulation.SelectedText = ""
+        Me.lblPerPopulation.Size = New System.Drawing.Size(81, 60)
+        Me.lblPerPopulation.TabIndex = 56
+        Me.lblPerPopulation.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'lblNextDay
+        '
+        Me.lblNextDay.AutoRoundedCorners = True
+        Me.lblNextDay.BorderRadius = 29
+        Me.lblNextDay.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.lblNextDay.DefaultText = "Arv"
+        Me.lblNextDay.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.lblNextDay.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.lblNextDay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lblNextDay.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lblNextDay.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.lblNextDay.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lblNextDay.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
+        Me.lblNextDay.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.lblNextDay.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lblNextDay.Location = New System.Drawing.Point(1043, 347)
+        Me.lblNextDay.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.lblNextDay.Name = "lblNextDay"
+        Me.lblNextDay.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.lblNextDay.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.lblNextDay.PlaceholderText = ""
+        Me.lblNextDay.ReadOnly = True
+        Me.lblNextDay.SelectedText = ""
+        Me.lblNextDay.Size = New System.Drawing.Size(81, 60)
+        Me.lblNextDay.TabIndex = 57
+        Me.lblNextDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'formEestiStatistika
         '
@@ -219,23 +421,24 @@ Partial Class formEestiStatistika
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "formEestiStatistika"
         Me.Guna2Panel1.ResumeLayout(False)
-        Me.Guna2Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents CartesianChart1 As LiveCharts.WinForms.CartesianChart
-    Friend WithEvents Label5 As Label
     Friend WithEvents clndrKuupaev As Guna.UI2.WinForms.Guna2DateTimePicker
-    Friend WithEvents lblNextDay As Label
-    Friend WithEvents lblPerPopulation As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents lblSeePaev As Label
-    Friend WithEvents lbl14p As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents lblTotalCases As Label
     Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents kjlkj As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox7 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox6 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox5 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox4 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2AnimateWindow1 As Guna.UI2.WinForms.Guna2AnimateWindow
+    Friend WithEvents lblDailyCases As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents lblNextDay As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents lblPerPopulation As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents lbl14p As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents lblTotalCases As Guna.UI2.WinForms.Guna2TextBox
 End Class
