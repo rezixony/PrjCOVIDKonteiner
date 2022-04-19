@@ -33,11 +33,15 @@ Partial Class formMaakondadeStatistika
         Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btnLeiaMaakond = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.cbMaakond = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.txtPaevadeArv = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2Panel1
         '
+        Me.Guna2Panel1.Controls.Add(Me.txtPaevadeArv)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2TextBox3)
         Me.Guna2Panel1.Controls.Add(Me.lblTotalCasesMaakond)
         Me.Guna2Panel1.Controls.Add(Me.Guna2TextBox4)
         Me.Guna2Panel1.Controls.Add(Me.lblDailyCasesMaakond)
@@ -68,7 +72,7 @@ Partial Class formMaakondadeStatistika
         Me.lblTotalCasesMaakond.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
         Me.lblTotalCasesMaakond.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
         Me.lblTotalCasesMaakond.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.lblTotalCasesMaakond.Location = New System.Drawing.Point(775, 230)
+        Me.lblTotalCasesMaakond.Location = New System.Drawing.Point(1002, 243)
         Me.lblTotalCasesMaakond.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.lblTotalCasesMaakond.Name = "lblTotalCasesMaakond"
         Me.lblTotalCasesMaakond.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -95,7 +99,7 @@ Partial Class formMaakondadeStatistika
         Me.Guna2TextBox4.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
         Me.Guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox4.Location = New System.Drawing.Point(622, 230)
+        Me.Guna2TextBox4.Location = New System.Drawing.Point(849, 243)
         Me.Guna2TextBox4.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Guna2TextBox4.Name = "Guna2TextBox4"
         Me.Guna2TextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -122,7 +126,7 @@ Partial Class formMaakondadeStatistika
         Me.lblDailyCasesMaakond.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
         Me.lblDailyCasesMaakond.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
         Me.lblDailyCasesMaakond.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.lblDailyCasesMaakond.Location = New System.Drawing.Point(466, 230)
+        Me.lblDailyCasesMaakond.Location = New System.Drawing.Point(219, 236)
         Me.lblDailyCasesMaakond.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.lblDailyCasesMaakond.Name = "lblDailyCasesMaakond"
         Me.lblDailyCasesMaakond.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -149,7 +153,7 @@ Partial Class formMaakondadeStatistika
         Me.kjlkj.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
         Me.kjlkj.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
         Me.kjlkj.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.kjlkj.Location = New System.Drawing.Point(313, 230)
+        Me.kjlkj.Location = New System.Drawing.Point(66, 236)
         Me.kjlkj.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.kjlkj.Name = "kjlkj"
         Me.kjlkj.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -250,7 +254,7 @@ Partial Class formMaakondadeStatistika
         Me.btnLeiaMaakond.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.btnLeiaMaakond.Font = New System.Drawing.Font("Book Antiqua", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLeiaMaakond.ForeColor = System.Drawing.Color.Blue
-        Me.btnLeiaMaakond.Location = New System.Drawing.Point(412, 169)
+        Me.btnLeiaMaakond.Location = New System.Drawing.Point(439, 243)
         Me.btnLeiaMaakond.Name = "btnLeiaMaakond"
         Me.btnLeiaMaakond.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.btnLeiaMaakond.Size = New System.Drawing.Size(98, 53)
@@ -267,14 +271,67 @@ Partial Class formMaakondadeStatistika
         Me.cbMaakond.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
         Me.cbMaakond.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.cbMaakond.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.cbMaakond.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(186, Byte))
+        Me.cbMaakond.Font = New System.Drawing.Font("Segoe UI", 14.25!)
         Me.cbMaakond.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.cbMaakond.ItemHeight = 30
-        Me.cbMaakond.Items.AddRange(New Object() {"Eesti", "Harju maakond", "Hiiu maakond", "Ida-Viru maakond", "Järva maakond", "Jõgeva maakond", "Lääne maakond", "Lääne-Viru maakond", "Pärnu maakond", "Põlva maakond", "Rapla maakond", "Saare maakond", "Tartu maakond", "Valga maakond", "Viljandi maakond", "Võru maakond"})
-        Me.cbMaakond.Location = New System.Drawing.Point(525, 172)
+        Me.cbMaakond.Items.AddRange(New Object() {"Harju maakond", "Hiiu maakond", "Ida-Viru maakond", "Järva maakond", "Jõgeva maakond", "Lääne maakond", "Lääne-Viru maakond", "Pärnu maakond", "Põlva maakond", "Rapla maakond", "Saare maakond", "Tartu maakond", "Valga maakond", "Viljandi maakond", "Võru maakond"})
+        Me.cbMaakond.Location = New System.Drawing.Point(585, 243)
         Me.cbMaakond.Name = "cbMaakond"
         Me.cbMaakond.Size = New System.Drawing.Size(213, 36)
         Me.cbMaakond.TabIndex = 32
+        '
+        'txtPaevadeArv
+        '
+        Me.txtPaevadeArv.AutoRoundedCorners = True
+        Me.txtPaevadeArv.BorderRadius = 24
+        Me.txtPaevadeArv.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtPaevadeArv.DefaultText = ""
+        Me.txtPaevadeArv.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.txtPaevadeArv.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.txtPaevadeArv.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtPaevadeArv.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.txtPaevadeArv.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.txtPaevadeArv.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtPaevadeArv.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
+        Me.txtPaevadeArv.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.txtPaevadeArv.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.txtPaevadeArv.Location = New System.Drawing.Point(621, 174)
+        Me.txtPaevadeArv.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.txtPaevadeArv.Name = "txtPaevadeArv"
+        Me.txtPaevadeArv.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txtPaevadeArv.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.txtPaevadeArv.PlaceholderText = ""
+        Me.txtPaevadeArv.SelectedText = ""
+        Me.txtPaevadeArv.Size = New System.Drawing.Size(235, 51)
+        Me.txtPaevadeArv.TabIndex = 62
+        Me.txtPaevadeArv.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Guna2TextBox3
+        '
+        Me.Guna2TextBox3.AutoRoundedCorners = True
+        Me.Guna2TextBox3.BorderRadius = 24
+        Me.Guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox3.DefaultText = "Mitme eelneva päeva jaoks?"
+        Me.Guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox3.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.Guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox3.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
+        Me.Guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.Guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox3.Location = New System.Drawing.Point(313, 171)
+        Me.Guna2TextBox3.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
+        Me.Guna2TextBox3.Name = "Guna2TextBox3"
+        Me.Guna2TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.Empty
+        Me.Guna2TextBox3.PlaceholderText = ""
+        Me.Guna2TextBox3.ReadOnly = True
+        Me.Guna2TextBox3.SelectedText = ""
+        Me.Guna2TextBox3.Size = New System.Drawing.Size(300, 51)
+        Me.Guna2TextBox3.TabIndex = 61
+        Me.Guna2TextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'formMaakondadeStatistika
         '
@@ -300,4 +357,6 @@ Partial Class formMaakondadeStatistika
     Friend WithEvents kjlkj As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents lblTotalCasesMaakond As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2TextBox4 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents txtPaevadeArv As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2TextBox3 As Guna.UI2.WinForms.Guna2TextBox
 End Class
