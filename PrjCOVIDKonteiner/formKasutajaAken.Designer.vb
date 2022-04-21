@@ -24,268 +24,127 @@ Partial Class formKasutajaAken
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(formKasutajaAken))
-        Me.lblSeePaev = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.lblTotalCases = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.lbl14p = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.lblPerPopulation = New System.Windows.Forms.Label()
-        Me.lblNextDay = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button3 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.clndrKuupaev = New Guna.UI2.WinForms.Guna2DateTimePicker()
-        Me.cbMaakond = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.btnLeia = New Guna.UI2.WinForms.Guna2GradientCircleButton()
+        Me.btnExit = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnCOVIDInfo = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnMaailmaStatistika = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnMaakondadeStatistika = New Guna.UI2.WinForms.Guna2Button()
+        Me.btnEestiStatistika = New Guna.UI2.WinForms.Guna2Button()
         Me.bunifuChart = New Bunifu.Charts.WinForms.ChartTypes.BunifuBarChart(Me.components)
-        Me.CartesianChart1 = New LiveCharts.WinForms.CartesianChart()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel1.SuspendLayout()
+        Me.Guna2Panel2.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'lblSeePaev
-        '
-        Me.lblSeePaev.AutoSize = True
-        Me.lblSeePaev.Location = New System.Drawing.Point(662, 133)
-        Me.lblSeePaev.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblSeePaev.Name = "lblSeePaev"
-        Me.lblSeePaev.Size = New System.Drawing.Size(23, 13)
-        Me.lblSeePaev.TabIndex = 1
-        Me.lblSeePaev.Text = "Arv"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(582, 133)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Sellel paeval"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(582, 158)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(38, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Kokku"
-        '
-        'lblTotalCases
-        '
-        Me.lblTotalCases.AutoSize = True
-        Me.lblTotalCases.Location = New System.Drawing.Point(662, 158)
-        Me.lblTotalCases.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblTotalCases.Name = "lblTotalCases"
-        Me.lblTotalCases.Size = New System.Drawing.Size(23, 13)
-        Me.lblTotalCases.TabIndex = 4
-        Me.lblTotalCases.Text = "Arv"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(594, 186)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(100, 13)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Viimase 14p jooksul"
-        '
-        'lbl14p
-        '
-        Me.lbl14p.AutoSize = True
-        Me.lbl14p.Location = New System.Drawing.Point(710, 187)
-        Me.lbl14p.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lbl14p.Name = "lbl14p"
-        Me.lbl14p.Size = New System.Drawing.Size(23, 13)
-        Me.lbl14p.TabIndex = 6
-        Me.lbl14p.Text = "Arv"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(594, 213)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(75, 13)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Per population"
-        '
-        'lblPerPopulation
-        '
-        Me.lblPerPopulation.AutoSize = True
-        Me.lblPerPopulation.Location = New System.Drawing.Point(710, 213)
-        Me.lblPerPopulation.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblPerPopulation.Name = "lblPerPopulation"
-        Me.lblPerPopulation.Size = New System.Drawing.Size(23, 13)
-        Me.lblPerPopulation.TabIndex = 8
-        Me.lblPerPopulation.Text = "Arv"
-        '
-        'lblNextDay
-        '
-        Me.lblNextDay.AutoSize = True
-        Me.lblNextDay.Location = New System.Drawing.Point(706, 253)
-        Me.lblNextDay.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.lblNextDay.Name = "lblNextDay"
-        Me.lblNextDay.Size = New System.Drawing.Size(23, 13)
-        Me.lblNextDay.TabIndex = 11
-        Me.lblNextDay.Text = "Arv"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(616, 253)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(54, 13)
-        Me.Label5.TabIndex = 12
-        Me.Label5.Text = "Next Day:"
         '
         'Guna2Panel1
         '
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button4)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button3)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button2)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button1)
+        Me.Guna2Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.Guna2Panel1.Controls.Add(Me.btnExit)
+        Me.Guna2Panel1.Controls.Add(Me.btnCOVIDInfo)
+        Me.Guna2Panel1.Controls.Add(Me.btnMaailmaStatistika)
+        Me.Guna2Panel1.Controls.Add(Me.btnMaakondadeStatistika)
+        Me.Guna2Panel1.Controls.Add(Me.btnEestiStatistika)
         Me.Guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.Size = New System.Drawing.Size(239, 695)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(239, 702)
         Me.Guna2Panel1.TabIndex = 15
         '
-        'Guna2Button4
+        'btnExit
         '
-        Me.Guna2Button4.Animated = True
-        Me.Guna2Button4.AutoRoundedCorners = True
-        Me.Guna2Button4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button4.BorderRadius = 19
-        Me.Guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button4.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2Button4.Font = New System.Drawing.Font("Segoe UI", 15.75!)
-        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button4.Location = New System.Drawing.Point(3, 349)
-        Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.Size = New System.Drawing.Size(233, 40)
-        Me.Guna2Button4.TabIndex = 19
-        Me.Guna2Button4.Text = "COVID info"
+        Me.btnExit.Animated = True
+        Me.btnExit.AutoRoundedCorners = True
+        Me.btnExit.BackColor = System.Drawing.Color.Transparent
+        Me.btnExit.BorderRadius = 19
+        Me.btnExit.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnExit.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnExit.Font = New System.Drawing.Font("Segoe UI", 15.75!)
+        Me.btnExit.ForeColor = System.Drawing.Color.White
+        Me.btnExit.Location = New System.Drawing.Point(0, 409)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(233, 40)
+        Me.btnExit.TabIndex = 20
+        Me.btnExit.Text = "Exit"
         '
-        'Guna2Button3
+        'btnCOVIDInfo
         '
-        Me.Guna2Button3.Animated = True
-        Me.Guna2Button3.AutoRoundedCorners = True
-        Me.Guna2Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button3.BorderRadius = 19
-        Me.Guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button3.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2Button3.Font = New System.Drawing.Font("Segoe UI", 15.75!)
-        Me.Guna2Button3.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button3.Location = New System.Drawing.Point(3, 294)
-        Me.Guna2Button3.Name = "Guna2Button3"
-        Me.Guna2Button3.Size = New System.Drawing.Size(233, 40)
-        Me.Guna2Button3.TabIndex = 18
-        Me.Guna2Button3.Text = "Maailma statistika"
+        Me.btnCOVIDInfo.Animated = True
+        Me.btnCOVIDInfo.AutoRoundedCorners = True
+        Me.btnCOVIDInfo.BackColor = System.Drawing.Color.Transparent
+        Me.btnCOVIDInfo.BorderRadius = 19
+        Me.btnCOVIDInfo.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnCOVIDInfo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnCOVIDInfo.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnCOVIDInfo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnCOVIDInfo.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnCOVIDInfo.Font = New System.Drawing.Font("Segoe UI", 15.75!)
+        Me.btnCOVIDInfo.ForeColor = System.Drawing.Color.White
+        Me.btnCOVIDInfo.Location = New System.Drawing.Point(3, 349)
+        Me.btnCOVIDInfo.Name = "btnCOVIDInfo"
+        Me.btnCOVIDInfo.Size = New System.Drawing.Size(233, 40)
+        Me.btnCOVIDInfo.TabIndex = 19
+        Me.btnCOVIDInfo.Text = "COVID info"
         '
-        'Guna2Button2
+        'btnMaailmaStatistika
         '
-        Me.Guna2Button2.Animated = True
-        Me.Guna2Button2.AutoRoundedCorners = True
-        Me.Guna2Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button2.BorderRadius = 20
-        Me.Guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2Button2.Font = New System.Drawing.Font("Segoe UI", 14.7!)
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.Location = New System.Drawing.Point(3, 236)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.Size = New System.Drawing.Size(233, 42)
-        Me.Guna2Button2.TabIndex = 17
-        Me.Guna2Button2.Text = "Maakondade statistika"
+        Me.btnMaailmaStatistika.Animated = True
+        Me.btnMaailmaStatistika.AutoRoundedCorners = True
+        Me.btnMaailmaStatistika.BackColor = System.Drawing.Color.Transparent
+        Me.btnMaailmaStatistika.BorderRadius = 19
+        Me.btnMaailmaStatistika.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnMaailmaStatistika.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnMaailmaStatistika.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnMaailmaStatistika.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnMaailmaStatistika.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnMaailmaStatistika.Font = New System.Drawing.Font("Segoe UI", 15.75!)
+        Me.btnMaailmaStatistika.ForeColor = System.Drawing.Color.White
+        Me.btnMaailmaStatistika.Location = New System.Drawing.Point(3, 294)
+        Me.btnMaailmaStatistika.Name = "btnMaailmaStatistika"
+        Me.btnMaailmaStatistika.Size = New System.Drawing.Size(233, 40)
+        Me.btnMaailmaStatistika.TabIndex = 18
+        Me.btnMaailmaStatistika.Text = "Maailma statistika"
         '
-        'Guna2Button1
+        'btnMaakondadeStatistika
         '
-        Me.Guna2Button1.Animated = True
-        Me.Guna2Button1.AutoRoundedCorners = True
-        Me.Guna2Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2Button1.BorderRadius = 19
-        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Segoe UI", 15.75!)
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.Location = New System.Drawing.Point(3, 178)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.Size = New System.Drawing.Size(233, 40)
-        Me.Guna2Button1.TabIndex = 16
-        Me.Guna2Button1.Text = "Eesti statistika"
+        Me.btnMaakondadeStatistika.Animated = True
+        Me.btnMaakondadeStatistika.AutoRoundedCorners = True
+        Me.btnMaakondadeStatistika.BackColor = System.Drawing.Color.Transparent
+        Me.btnMaakondadeStatistika.BorderRadius = 20
+        Me.btnMaakondadeStatistika.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnMaakondadeStatistika.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnMaakondadeStatistika.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnMaakondadeStatistika.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnMaakondadeStatistika.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnMaakondadeStatistika.Font = New System.Drawing.Font("Segoe UI", 14.7!)
+        Me.btnMaakondadeStatistika.ForeColor = System.Drawing.Color.White
+        Me.btnMaakondadeStatistika.Location = New System.Drawing.Point(3, 236)
+        Me.btnMaakondadeStatistika.Name = "btnMaakondadeStatistika"
+        Me.btnMaakondadeStatistika.Size = New System.Drawing.Size(233, 42)
+        Me.btnMaakondadeStatistika.TabIndex = 17
+        Me.btnMaakondadeStatistika.Text = "Maakondade statistika"
         '
-        'clndrKuupaev
+        'btnEestiStatistika
         '
-        Me.clndrKuupaev.AutoRoundedCorners = True
-        Me.clndrKuupaev.BorderRadius = 17
-        Me.clndrKuupaev.Checked = True
-        Me.clndrKuupaev.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.clndrKuupaev.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(186, Byte))
-        Me.clndrKuupaev.ForeColor = System.Drawing.Color.DarkOrchid
-        Me.clndrKuupaev.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
-        Me.clndrKuupaev.Location = New System.Drawing.Point(494, 25)
-        Me.clndrKuupaev.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
-        Me.clndrKuupaev.MinDate = New Date(1753, 1, 1, 0, 0, 0, 0)
-        Me.clndrKuupaev.Name = "clndrKuupaev"
-        Me.clndrKuupaev.Size = New System.Drawing.Size(200, 36)
-        Me.clndrKuupaev.TabIndex = 16
-        Me.clndrKuupaev.Value = New Date(2022, 4, 5, 14, 44, 14, 746)
-        '
-        'cbMaakond
-        '
-        Me.cbMaakond.AutoRoundedCorners = True
-        Me.cbMaakond.BackColor = System.Drawing.Color.Transparent
-        Me.cbMaakond.BorderRadius = 17
-        Me.cbMaakond.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.cbMaakond.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbMaakond.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.cbMaakond.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.cbMaakond.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.cbMaakond.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.cbMaakond.ItemHeight = 30
-        Me.cbMaakond.Items.AddRange(New Object() {"Eesti", "Harju maakond", "Hiiu maakond", "Ida-Viru maakond", "Järva maakond", "Jõgeva maakond", "Lääne maakond", "Lääne-Viru maakond", "Pärnu maakond", "Põlva maakond", "Rapla maakond", "Saare maakond", "Tartu maakond", "Valga maakond", "Viljandi maakond", "Võru maakond"})
-        Me.cbMaakond.Location = New System.Drawing.Point(545, 89)
-        Me.cbMaakond.Name = "cbMaakond"
-        Me.cbMaakond.Size = New System.Drawing.Size(140, 36)
-        Me.cbMaakond.TabIndex = 17
-        '
-        'btnLeia
-        '
-        Me.btnLeia.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.btnLeia.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.btnLeia.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnLeia.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.btnLeia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnLeia.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Bold)
-        Me.btnLeia.ForeColor = System.Drawing.Color.White
-        Me.btnLeia.Location = New System.Drawing.Point(465, 78)
-        Me.btnLeia.Name = "btnLeia"
-        Me.btnLeia.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.btnLeia.Size = New System.Drawing.Size(74, 68)
-        Me.btnLeia.TabIndex = 18
-        Me.btnLeia.Text = "Leia"
+        Me.btnEestiStatistika.Animated = True
+        Me.btnEestiStatistika.AutoRoundedCorners = True
+        Me.btnEestiStatistika.BackColor = System.Drawing.Color.Transparent
+        Me.btnEestiStatistika.BorderRadius = 19
+        Me.btnEestiStatistika.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.btnEestiStatistika.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.btnEestiStatistika.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.btnEestiStatistika.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.btnEestiStatistika.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnEestiStatistika.Font = New System.Drawing.Font("Segoe UI", 15.75!)
+        Me.btnEestiStatistika.ForeColor = System.Drawing.Color.White
+        Me.btnEestiStatistika.Location = New System.Drawing.Point(3, 178)
+        Me.btnEestiStatistika.Name = "btnEestiStatistika"
+        Me.btnEestiStatistika.Size = New System.Drawing.Size(233, 40)
+        Me.btnEestiStatistika.TabIndex = 16
+        Me.btnEestiStatistika.Text = "Eesti statistika"
         '
         'bunifuChart
         '
@@ -300,60 +159,62 @@ Partial Class formKasutajaAken
         Me.bunifuChart.Label = "Label here"
         Me.bunifuChart.TargetCanvas = Nothing
         '
-        'CartesianChart1
+        'Guna2Panel2
         '
-        Me.CartesianChart1.Location = New System.Drawing.Point(724, 332)
-        Me.CartesianChart1.Name = "CartesianChart1"
-        Me.CartesianChart1.Size = New System.Drawing.Size(350, 251)
-        Me.CartesianChart1.TabIndex = 19
-        Me.CartesianChart1.Text = "CartesianChart1"
+        Me.Guna2Panel2.Controls.Add(Me.Guna2TextBox1)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(239, 0)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.Size = New System.Drawing.Size(1173, 695)
+        Me.Guna2Panel2.TabIndex = 20
+        '
+        'Guna2TextBox1
+        '
+        Me.Guna2TextBox1.AutoRoundedCorners = True
+        Me.Guna2TextBox1.BorderRadius = 57
+        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Guna2TextBox1.DefaultText = "Tere tulemasti Eesti Statistika Dashboardi!"
+        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI Black", 24.0!, System.Drawing.FontStyle.Bold)
+        Me.Guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TextBox1.Location = New System.Drawing.Point(198, 236)
+        Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(8, 8, 8, 8)
+        Me.Guna2TextBox1.Name = "Guna2TextBox1"
+        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.Guna2TextBox1.PlaceholderText = ""
+        Me.Guna2TextBox1.ReadOnly = True
+        Me.Guna2TextBox1.SelectedText = ""
+        Me.Guna2TextBox1.Size = New System.Drawing.Size(717, 116)
+        Me.Guna2TextBox1.TabIndex = 47
+        Me.Guna2TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'formKasutajaAken
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1415, 695)
-        Me.Controls.Add(Me.CartesianChart1)
-        Me.Controls.Add(Me.btnLeia)
-        Me.Controls.Add(Me.cbMaakond)
-        Me.Controls.Add(Me.clndrKuupaev)
+        Me.ClientSize = New System.Drawing.Size(1415, 702)
+        Me.Controls.Add(Me.Guna2Panel2)
         Me.Controls.Add(Me.Guna2Panel1)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.lblNextDay)
-        Me.Controls.Add(Me.lblPerPopulation)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.lbl14p)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.lblTotalCases)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.lblSeePaev)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "formKasutajaAken"
         Me.Text = "COVID andmed"
         Me.Guna2Panel1.ResumeLayout(False)
+        Me.Guna2Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents lblSeePaev As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents lblTotalCases As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents lbl14p As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents lblPerPopulation As Label
-    Friend WithEvents lblNextDay As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button3 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents clndrKuupaev As Guna.UI2.WinForms.Guna2DateTimePicker
-    Friend WithEvents cbMaakond As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents btnLeia As Guna.UI2.WinForms.Guna2GradientCircleButton
+    Friend WithEvents btnEestiStatistika As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnCOVIDInfo As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnMaailmaStatistika As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents btnMaakondadeStatistika As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents bunifuChart As Bunifu.Charts.WinForms.ChartTypes.BunifuBarChart
-    Friend WithEvents CartesianChart1 As LiveCharts.WinForms.CartesianChart
+    Friend WithEvents btnExit As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
 End Class

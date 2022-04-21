@@ -101,6 +101,8 @@
     <Compile Include="formEestiStatistika.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="formKasutajaAken.Designer.vb" />
+    <Compile Include="formKasutajaAken.vb" />
     <Compile Include="formMaailmaStatistika.Designer.vb">
       <DependentUpon>formMaailmaStatistika.vb</DependentUpon>
     </Compile>
@@ -114,15 +116,6 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ICOVID.vb" />
-    <Compile Include="P:\formKasutajaAken.vb">
-      <SubType>Form</SubType>
-      <Link>formKasutajaAken.vb</Link>
-    </Compile>
-    <Compile Include="P:\formKasutajaAken.Designer.vb">
-      <DependentUpon>formKasutajaAken.vb</DependentUpon>
-      <SubType>Form</SubType>
-      <Link>formKasutajaAken.Designer.vb</Link>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -147,15 +140,12 @@
     <EmbeddedResource Include="formEestiStatistika.resx">
       <DependentUpon>formEestiStatistika.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="formKasutajaAken.resx" />
     <EmbeddedResource Include="formMaailmaStatistika.resx">
       <DependentUpon>formMaailmaStatistika.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formMaakondadeStatistika.resx">
       <DependentUpon>formMaakondadeStatistika.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="P:\formKasutajaAken.resx">
-      <DependentUpon>formKasutajaAken.vb</DependentUpon>
-      <Link>formKasutajaAken.resx</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
