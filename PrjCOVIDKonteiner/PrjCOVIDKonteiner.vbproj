@@ -55,7 +55,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="PrjCOVID">
-      <HintPath>..\..\PrjCOVID\PrjCOVID\bin\Debug\PrjCOVID.dll</HintPath>
+      <HintPath>..\PrjCOVID\bin\Debug\PrjCOVID.exe</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -100,7 +100,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="formKasutajaAken.Designer.vb" />
-    <Compile Include="formKasutajaAken.vb" />
+    <Compile Include="formKasutajaAken.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="formMaailmaStatistika.Designer.vb">
       <DependentUpon>formMaailmaStatistika.vb</DependentUpon>
     </Compile>
