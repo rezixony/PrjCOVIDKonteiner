@@ -17,6 +17,8 @@ Public Class formMaakondadeStatistika
 
 
     Private Sub btnLeiaMaakond_Click(sender As Object, e As EventArgs) Handles btnLeiaMaakond.Click
+        lblDailyCasesMaakond.Size = New Size(90, 70)
+
 
         CartesianChartMaakond.AxisX.Clear()
         CartesianChartMaakond.AxisY.Clear()
@@ -82,5 +84,45 @@ Public Class formMaakondadeStatistika
                                      .Title = "Nakatunute arv",
                                      .LabelFormatter = Function(value) value.ToString
                                      })
+    End Sub
+
+    Private Sub Guna2GradientCircleButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientCircleButton1.Click
+
+        If Guna2TextBox1.Size.Height > 85
+            MsgBox("Ei saa enam väiksemaks teha!")
+            Exit Sub
+        End If
+
+
+        lblDailyCasesMaakond.Size = New Size(lblDailyCasesMaakond.Size.Width + 5, lblDailyCasesMaakond.Size.Height + 5)
+        Guna2TextBox1.Size = New Size(Guna2TextBox1.Size.Width + 5, Guna2TextBox1.Size.Height + 5)
+        Guna2TextBox2.Size = New Size(Guna2TextBox2.Size.Width + 5, Guna2TextBox2.Height + 5)
+        Guna2TextBox3.Size = New Size(Guna2TextBox3.Width + 5, Guna2TextBox3.Height + 5)
+        kjlkj.Size = New Size(kjlkj.Size.Width + 5, kjlkj.Size.Height + 5)
+        Guna2TextBox4.Size = New Size(Guna2TextBox4.Size.Width + 5, Guna2TextBox4.Height + 5)
+        lblTotalCasesMaakond.Size = New Size(lblTotalCasesMaakond.Size.Width + 5, lblDailyCasesMaakond.Size.Height + 5)
+        btnLeiaMaakond.Size = New Size(btnLeiaMaakond.Size.Width + 5, btnLeiaMaakond.Size.Height + 5)
+        cbMaakond.Size = New Size(cbMaakond.Size.Width + 5, cbMaakond.Size.Height + 5)
+
+    End Sub
+
+    Private Sub Guna2GradientCircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2GradientCircleButton2.Click
+
+        If Guna2TextBox1.Size.Height < 60
+            MsgBox("Ei saa enam väiksemaks teha!")
+            Exit Sub
+        End If
+
+        lblDailyCasesMaakond.Size = New Size(lblDailyCasesMaakond.Size.Width - 5, lblDailyCasesMaakond.Size.Height - 5)
+        Guna2TextBox1.Size = New Size(Guna2TextBox1.Size.Width - 5, Guna2TextBox1.Size.Height - 5)
+        Guna2TextBox2.Size = New Size(Guna2TextBox2.Size.Width - 5, Guna2TextBox2.Height - 5)
+        Guna2TextBox3.Size = New Size(Guna2TextBox3.Width - 5, Guna2TextBox3.Height - 5)
+        kjlkj.Size = New Size(kjlkj.Size.Width - 5, kjlkj.Size.Height - 5)
+        Guna2TextBox4.Size = New Size(Guna2TextBox4.Size.Width - 5, Guna2TextBox4.Height - 5)
+        lblTotalCasesMaakond.Size = New Size(lblTotalCasesMaakond.Size.Width - 5, lblDailyCasesMaakond.Size.Height - 5)
+        btnLeiaMaakond.Size = New Size(btnLeiaMaakond.Size.Width - 5, btnLeiaMaakond.Size.Height - 5)
+        cbMaakond.Size = New Size(cbMaakond.Size.Width - 5, cbMaakond.Size.Height - 5)
+
+
     End Sub
 End Class
