@@ -87,6 +87,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CCOVID.vb" />
+    <Compile Include="Data.vb" />
     <Compile Include="formCOVIDInfo.Designer.vb">
       <DependentUpon>formCOVIDInfo.vb</DependentUpon>
     </Compile>
@@ -111,6 +113,7 @@
     <Compile Include="formMaakondadeStatistika.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ICOVID.vb" />
     <Compile Include="P:\formKasutajaAken.vb">
       <SubType>Form</SubType>
       <Link>formKasutajaAken.vb</Link>
