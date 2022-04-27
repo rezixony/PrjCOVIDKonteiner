@@ -39,7 +39,7 @@ Partial Class formKasutajaAken
         '
         'Guna2Panel1
         '
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.Guna2Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(193, Byte), Integer), CType(CType(225, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2Panel1.Controls.Add(Me.btnExit)
         Me.Guna2Panel1.Controls.Add(Me.btnCOVIDInfo)
         Me.Guna2Panel1.Controls.Add(Me.btnMaailmaStatistika)
@@ -61,7 +61,7 @@ Partial Class formKasutajaAken
         Me.btnExit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.btnExit.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btnExit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnExit.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnExit.FillColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(189, Byte), Integer))
         Me.btnExit.Font = New System.Drawing.Font("Segoe UI", 15.75!)
         Me.btnExit.ForeColor = System.Drawing.Color.White
         Me.btnExit.Location = New System.Drawing.Point(0, 409)
@@ -80,7 +80,7 @@ Partial Class formKasutajaAken
         Me.btnCOVIDInfo.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.btnCOVIDInfo.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btnCOVIDInfo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnCOVIDInfo.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnCOVIDInfo.FillColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(189, Byte), Integer))
         Me.btnCOVIDInfo.Font = New System.Drawing.Font("Segoe UI", 15.75!)
         Me.btnCOVIDInfo.ForeColor = System.Drawing.Color.White
         Me.btnCOVIDInfo.Location = New System.Drawing.Point(3, 349)
@@ -99,7 +99,7 @@ Partial Class formKasutajaAken
         Me.btnMaailmaStatistika.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.btnMaailmaStatistika.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btnMaailmaStatistika.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnMaailmaStatistika.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnMaailmaStatistika.FillColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(189, Byte), Integer))
         Me.btnMaailmaStatistika.Font = New System.Drawing.Font("Segoe UI", 15.75!)
         Me.btnMaailmaStatistika.ForeColor = System.Drawing.Color.White
         Me.btnMaailmaStatistika.Location = New System.Drawing.Point(3, 294)
@@ -118,7 +118,7 @@ Partial Class formKasutajaAken
         Me.btnMaakondadeStatistika.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.btnMaakondadeStatistika.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btnMaakondadeStatistika.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnMaakondadeStatistika.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnMaakondadeStatistika.FillColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(189, Byte), Integer))
         Me.btnMaakondadeStatistika.Font = New System.Drawing.Font("Segoe UI", 14.7!)
         Me.btnMaakondadeStatistika.ForeColor = System.Drawing.Color.White
         Me.btnMaakondadeStatistika.Location = New System.Drawing.Point(3, 236)
@@ -137,7 +137,7 @@ Partial Class formKasutajaAken
         Me.btnEestiStatistika.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.btnEestiStatistika.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
         Me.btnEestiStatistika.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.btnEestiStatistika.FillColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(184, Byte), Integer), CType(CType(148, Byte), Integer))
+        Me.btnEestiStatistika.FillColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(189, Byte), Integer))
         Me.btnEestiStatistika.Font = New System.Drawing.Font("Segoe UI", 15.75!)
         Me.btnEestiStatistika.ForeColor = System.Drawing.Color.White
         Me.btnEestiStatistika.Location = New System.Drawing.Point(3, 178)
@@ -174,13 +174,15 @@ Partial Class formKasutajaAken
         Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.Guna2TextBox1.DefaultText = "Tere tulemasti Eesti Statistika Dashboardi!"
         Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(189, Byte), Integer))
+        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(189, Byte), Integer))
         Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(85, Byte), Integer), CType(CType(239, Byte), Integer), CType(CType(196, Byte), Integer))
+        Me.Guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(54, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(189, Byte), Integer))
         Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI Black", 24.0!, System.Drawing.FontStyle.Bold)
-        Me.Guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(133, Byte), Integer))
+
+
+        Me.Guna2TextBox1.ForeColor = System.Drawing.Color.White
         Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2TextBox1.Location = New System.Drawing.Point(198, 236)
         Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(8, 8, 8, 8)

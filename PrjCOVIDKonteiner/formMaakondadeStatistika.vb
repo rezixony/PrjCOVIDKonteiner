@@ -89,7 +89,7 @@ Public Class formMaakondadeStatistika
     Private Sub Guna2GradientCircleButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientCircleButton1.Click
 
         If Guna2TextBox1.Size.Height > 85
-            MsgBox("Ei saa enam väiksemaks teha!")
+            MsgBox("Ei saa enam suuremaks teha!")
             Exit Sub
         End If
 

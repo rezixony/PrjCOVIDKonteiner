@@ -162,16 +162,16 @@ Public Class CCOVID
         request = DirectCast(WebRequest.Create("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/latest/owid-covid-latest.json"), HttpWebRequest)
         response = DirectCast(request.GetResponse(), HttpWebResponse)
         reader = New StreamReader(response.GetResponseStream())
-        Dim jsonString As String
-        jsonString = reader.ReadToEnd()
+        Dim jsonStringWorld As String
+        jsonStringWorld = reader.ReadToEnd()
 
         Dim WorldCountry() As String = {"Latvia", "Lithuania", "Poland", "Norway", "Finland", "Sweden", "Austria", "Belgium", "Bulgaria", "Croatia", "
-Cyprus", "Czechia", "Denmark", "France", "Germany", "Greece", "Hungary", "Ireland", "Italy", "Luxembourg", "Malta", "Netherlands", "Portugal", "Romania", "Slovakia", "Slovenia", "Spain"}
-        Dim WorldCountryAbbrev() As String = {"LVA", "LVO", "POL", "NOR", "FIN", "SWE", "AUT", "BEL", "BGR", "HRV", "CYP", "CZE", "DNK", "FRA", "DEU", "GRC", "HUN", "IRL", "ITA", "LUX", "MLT", "NLD", "PRT", "ROU", "SVK", "SVN", "ESP"}
+Cyprus", "Czechia", "Denmark", "France", "Germany", "Greece", "Hungary", "Ireland", "Italy", "Luxembourg", "Malta", "Netherlands", "Portugal", "Romania", "Slovakia", "Slovenia", "Spain", "Russia", "Greenland", "Mexico", "United States", "Egypt", "Cyprus", "Turkey", "China", "Japan", "India", "Ukraine", "Brazil", "Chile", "United Arab Emirates", "United Kingdom"}
+        Dim WorldCountryAbbrev() As String = {"LVA", "LTU", "POL", "NOR", "FIN", "SWE", "AUT", "BEL", "BGR", "HRV", "CYP", "CZE", "DNK", "FRA", "DEU", "GRC", "HUN", "IRL", "ITA", "LUX", "MLT", "NLD", "PRT", "ROU", "SVK", "SVN", "ESP", "RUS", "GRL", "MEX", "USA", "EGY", "CYP", "TUR", "CHN", "JPN", "IND", "UKR", "BRA", "CHL", "ARE", "GBR"}
 
-        For i As Integer = 0 To 26
+        For i As Integer = 0 To 41
             If WorldCountry(i) = AntudEuroopaRiik Then
-                Dim objectList = JObject.Parse(jsonString)
+                Dim objectList = JObject.Parse(jsonStringWorld)
                 Dim foundItem = JsonConvert.DeserializeObject(Of Data.JSON_result)(objectList(WorldCountryAbbrev(i)).ToString)
                 TotalCasesValueEurope = foundItem.total_cases
                 LastUpdatedDateEurope = foundItem.last_updated_date

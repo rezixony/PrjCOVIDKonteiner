@@ -23,6 +23,8 @@ Partial Class formMaakondadeStatistika
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2GradientCircleButton2 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
+        Me.Guna2GradientCircleButton1 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.txtPaevadeArv = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.lblTotalCasesMaakond = New Guna.UI2.WinForms.Guna2TextBox()
@@ -35,8 +37,6 @@ Partial Class formMaakondadeStatistika
         Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
         Me.btnLeiaMaakond = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.cbMaakond = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Guna2GradientCircleButton1 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
-        Me.Guna2GradientCircleButton2 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.Guna2Panel1.SuspendLayout
         Me.SuspendLayout
         '
@@ -61,6 +61,38 @@ Partial Class formMaakondadeStatistika
         Me.Guna2Panel1.Size = New System.Drawing.Size(1149, 671)
         Me.Guna2Panel1.TabIndex = 0
         '
+        'Guna2GradientCircleButton2
+        '
+        Me.Guna2GradientCircleButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
+        Me.Guna2GradientCircleButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
+        Me.Guna2GradientCircleButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer))
+        Me.Guna2GradientCircleButton2.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Bold)
+        Me.Guna2GradientCircleButton2.ForeColor = System.Drawing.Color.White
+        Me.Guna2GradientCircleButton2.Location = New System.Drawing.Point(1043, 565)
+        Me.Guna2GradientCircleButton2.Name = "Guna2GradientCircleButton2"
+        Me.Guna2GradientCircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2GradientCircleButton2.Size = New System.Drawing.Size(82, 79)
+        Me.Guna2GradientCircleButton2.TabIndex = 64
+        Me.Guna2GradientCircleButton2.Text = "T↓"
+        '
+        'Guna2GradientCircleButton1
+        '
+        Me.Guna2GradientCircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
+        Me.Guna2GradientCircleButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
+        Me.Guna2GradientCircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer))
+        Me.Guna2GradientCircleButton1.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(186,Byte))
+        Me.Guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White
+        Me.Guna2GradientCircleButton1.Location = New System.Drawing.Point(955, 565)
+        Me.Guna2GradientCircleButton1.Name = "Guna2GradientCircleButton1"
+        Me.Guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2GradientCircleButton1.Size = New System.Drawing.Size(82, 79)
+        Me.Guna2GradientCircleButton1.TabIndex = 63
+        Me.Guna2GradientCircleButton1.Text = "T↑"
+        '
         'txtPaevadeArv
         '
         Me.txtPaevadeArv.AutoRoundedCorners = true
@@ -71,10 +103,10 @@ Partial Class formMaakondadeStatistika
         Me.txtPaevadeArv.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer))
         Me.txtPaevadeArv.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
         Me.txtPaevadeArv.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
-        Me.txtPaevadeArv.FillColor = System.Drawing.Color.FromArgb(CType(CType(85,Byte),Integer), CType(CType(239,Byte),Integer), CType(CType(196,Byte),Integer))
+        Me.txtPaevadeArv.FillColor = System.Drawing.Color.FromArgb(CType(CType(54,Byte),Integer), CType(CType(120,Byte),Integer), CType(CType(189,Byte),Integer))
         Me.txtPaevadeArv.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.txtPaevadeArv.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
-        Me.txtPaevadeArv.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22,Byte),Integer), CType(CType(160,Byte),Integer), CType(CType(133,Byte),Integer))
+        Me.txtPaevadeArv.ForeColor = System.Drawing.Color.White
         Me.txtPaevadeArv.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.txtPaevadeArv.Location = New System.Drawing.Point(642, 156)
         Me.txtPaevadeArv.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -97,10 +129,10 @@ Partial Class formMaakondadeStatistika
         Me.Guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer))
         Me.Guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
         Me.Guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
-        Me.Guna2TextBox3.FillColor = System.Drawing.Color.FromArgb(CType(CType(85,Byte),Integer), CType(CType(239,Byte),Integer), CType(CType(196,Byte),Integer))
+        Me.Guna2TextBox3.FillColor = System.Drawing.Color.FromArgb(CType(CType(54,Byte),Integer), CType(CType(120,Byte),Integer), CType(CType(189,Byte),Integer))
         Me.Guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Guna2TextBox3.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
-        Me.Guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22,Byte),Integer), CType(CType(160,Byte),Integer), CType(CType(133,Byte),Integer))
+        Me.Guna2TextBox3.ForeColor = System.Drawing.Color.White
         Me.Guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Guna2TextBox3.Location = New System.Drawing.Point(324, 156)
         Me.Guna2TextBox3.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -124,10 +156,10 @@ Partial Class formMaakondadeStatistika
         Me.lblTotalCasesMaakond.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer))
         Me.lblTotalCasesMaakond.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
         Me.lblTotalCasesMaakond.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
-        Me.lblTotalCasesMaakond.FillColor = System.Drawing.Color.FromArgb(CType(CType(85,Byte),Integer), CType(CType(239,Byte),Integer), CType(CType(196,Byte),Integer))
+        Me.lblTotalCasesMaakond.FillColor = System.Drawing.Color.FromArgb(CType(CType(54,Byte),Integer), CType(CType(120,Byte),Integer), CType(CType(189,Byte),Integer))
         Me.lblTotalCasesMaakond.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.lblTotalCasesMaakond.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
-        Me.lblTotalCasesMaakond.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22,Byte),Integer), CType(CType(160,Byte),Integer), CType(CType(133,Byte),Integer))
+        Me.lblTotalCasesMaakond.ForeColor = System.Drawing.Color.White
         Me.lblTotalCasesMaakond.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.lblTotalCasesMaakond.Location = New System.Drawing.Point(1004, 233)
         Me.lblTotalCasesMaakond.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -151,10 +183,10 @@ Partial Class formMaakondadeStatistika
         Me.Guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer))
         Me.Guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
         Me.Guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
-        Me.Guna2TextBox4.FillColor = System.Drawing.Color.FromArgb(CType(CType(85,Byte),Integer), CType(CType(239,Byte),Integer), CType(CType(196,Byte),Integer))
+        Me.Guna2TextBox4.FillColor = System.Drawing.Color.FromArgb(CType(CType(54,Byte),Integer), CType(CType(120,Byte),Integer), CType(CType(189,Byte),Integer))
         Me.Guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Guna2TextBox4.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
-        Me.Guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22,Byte),Integer), CType(CType(160,Byte),Integer), CType(CType(133,Byte),Integer))
+        Me.Guna2TextBox4.ForeColor = System.Drawing.Color.White
         Me.Guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Guna2TextBox4.Location = New System.Drawing.Point(853, 233)
         Me.Guna2TextBox4.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -178,10 +210,10 @@ Partial Class formMaakondadeStatistika
         Me.lblDailyCasesMaakond.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer))
         Me.lblDailyCasesMaakond.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
         Me.lblDailyCasesMaakond.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
-        Me.lblDailyCasesMaakond.FillColor = System.Drawing.Color.FromArgb(CType(CType(85,Byte),Integer), CType(CType(239,Byte),Integer), CType(CType(196,Byte),Integer))
+        Me.lblDailyCasesMaakond.FillColor = System.Drawing.Color.FromArgb(CType(CType(54,Byte),Integer), CType(CType(120,Byte),Integer), CType(CType(189,Byte),Integer))
         Me.lblDailyCasesMaakond.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.lblDailyCasesMaakond.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
-        Me.lblDailyCasesMaakond.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22,Byte),Integer), CType(CType(160,Byte),Integer), CType(CType(133,Byte),Integer))
+        Me.lblDailyCasesMaakond.ForeColor = System.Drawing.Color.White
         Me.lblDailyCasesMaakond.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.lblDailyCasesMaakond.Location = New System.Drawing.Point(224, 233)
         Me.lblDailyCasesMaakond.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -205,10 +237,10 @@ Partial Class formMaakondadeStatistika
         Me.kjlkj.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer))
         Me.kjlkj.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
         Me.kjlkj.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
-        Me.kjlkj.FillColor = System.Drawing.Color.FromArgb(CType(CType(85,Byte),Integer), CType(CType(239,Byte),Integer), CType(CType(196,Byte),Integer))
+        Me.kjlkj.FillColor = System.Drawing.Color.FromArgb(CType(CType(54,Byte),Integer), CType(CType(120,Byte),Integer), CType(CType(189,Byte),Integer))
         Me.kjlkj.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.kjlkj.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
-        Me.kjlkj.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22,Byte),Integer), CType(CType(160,Byte),Integer), CType(CType(133,Byte),Integer))
+        Me.kjlkj.ForeColor = System.Drawing.Color.White
         Me.kjlkj.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.kjlkj.Location = New System.Drawing.Point(72, 233)
         Me.kjlkj.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
@@ -227,9 +259,9 @@ Partial Class formMaakondadeStatistika
         Me.clndrKuupaev.AutoRoundedCorners = true
         Me.clndrKuupaev.BorderRadius = 26
         Me.clndrKuupaev.Checked = true
-        Me.clndrKuupaev.FillColor = System.Drawing.Color.FromArgb(CType(CType(85,Byte),Integer), CType(CType(239,Byte),Integer), CType(CType(196,Byte),Integer))
+        Me.clndrKuupaev.FillColor = System.Drawing.Color.FromArgb(CType(CType(54,Byte),Integer), CType(CType(120,Byte),Integer), CType(CType(189,Byte),Integer))
         Me.clndrKuupaev.Font = New System.Drawing.Font("Segoe UI", 12!, System.Drawing.FontStyle.Bold)
-        Me.clndrKuupaev.ForeColor = System.Drawing.Color.DarkOrchid
+        Me.clndrKuupaev.ForeColor = System.Drawing.Color.GhostWhite
         Me.clndrKuupaev.Format = System.Windows.Forms.DateTimePickerFormat.[Long]
         Me.clndrKuupaev.Location = New System.Drawing.Point(632, 93)
         Me.clndrKuupaev.MaxDate = New Date(9998, 12, 31, 0, 0, 0, 0)
@@ -249,10 +281,10 @@ Partial Class formMaakondadeStatistika
         Me.Guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer))
         Me.Guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
         Me.Guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
-        Me.Guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(CType(CType(85,Byte),Integer), CType(CType(239,Byte),Integer), CType(CType(196,Byte),Integer))
+        Me.Guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(CType(CType(54,Byte),Integer), CType(CType(120,Byte),Integer), CType(CType(189,Byte),Integer))
         Me.Guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
-        Me.Guna2TextBox2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(186,Byte))
-        Me.Guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22,Byte),Integer), CType(CType(160,Byte),Integer), CType(CType(133,Byte),Integer))
+        Me.Guna2TextBox2.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.Guna2TextBox2.ForeColor = System.Drawing.Color.White
         Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Guna2TextBox2.Location = New System.Drawing.Point(324, 93)
         Me.Guna2TextBox2.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
@@ -285,10 +317,10 @@ Partial Class formMaakondadeStatistika
         Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer))
         Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
         Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
-        Me.Guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(85,Byte),Integer), CType(CType(239,Byte),Integer), CType(CType(196,Byte),Integer))
+        Me.Guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(CType(CType(54,Byte),Integer), CType(CType(120,Byte),Integer), CType(CType(189,Byte),Integer))
         Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Guna2TextBox1.Font = New System.Drawing.Font("Segoe UI", 18!, System.Drawing.FontStyle.Bold)
-        Me.Guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(22,Byte),Integer), CType(CType(160,Byte),Integer), CType(CType(133,Byte),Integer))
+        Me.Guna2TextBox1.ForeColor = System.Drawing.Color.White
         Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Guna2TextBox1.Location = New System.Drawing.Point(333, 3)
         Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
@@ -308,10 +340,10 @@ Partial Class formMaakondadeStatistika
         Me.btnLeiaMaakond.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
         Me.btnLeiaMaakond.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
         Me.btnLeiaMaakond.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer))
-        Me.btnLeiaMaakond.FillColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer))
-        Me.btnLeiaMaakond.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(192,Byte),Integer), CType(CType(0,Byte),Integer), CType(CType(192,Byte),Integer))
-        Me.btnLeiaMaakond.Font = New System.Drawing.Font("Book Antiqua", 15!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.btnLeiaMaakond.ForeColor = System.Drawing.Color.Blue
+        Me.btnLeiaMaakond.FillColor = System.Drawing.Color.DarkBlue
+        Me.btnLeiaMaakond.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(54,Byte),Integer), CType(CType(120,Byte),Integer), CType(CType(189,Byte),Integer))
+        Me.btnLeiaMaakond.Font = New System.Drawing.Font("Book Antiqua", 15!, System.Drawing.FontStyle.Bold)
+        Me.btnLeiaMaakond.ForeColor = System.Drawing.Color.Lavender
         Me.btnLeiaMaakond.Location = New System.Drawing.Point(481, 233)
         Me.btnLeiaMaakond.Name = "btnLeiaMaakond"
         Me.btnLeiaMaakond.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
@@ -326,49 +358,17 @@ Partial Class formMaakondadeStatistika
         Me.cbMaakond.BorderRadius = 17
         Me.cbMaakond.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.cbMaakond.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbMaakond.FillColor = System.Drawing.Color.FromArgb(CType(CType(85,Byte),Integer), CType(CType(239,Byte),Integer), CType(CType(196,Byte),Integer))
+        Me.cbMaakond.FillColor = System.Drawing.Color.FromArgb(CType(CType(54,Byte),Integer), CType(CType(120,Byte),Integer), CType(CType(189,Byte),Integer))
         Me.cbMaakond.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.cbMaakond.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.cbMaakond.Font = New System.Drawing.Font("Segoe UI", 14.25!)
-        Me.cbMaakond.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68,Byte),Integer), CType(CType(88,Byte),Integer), CType(CType(112,Byte),Integer))
+        Me.cbMaakond.ForeColor = System.Drawing.Color.White
         Me.cbMaakond.ItemHeight = 30
         Me.cbMaakond.Items.AddRange(New Object() {"Harju maakond", "Hiiu maakond", "Ida-Viru maakond", "Järva maakond", "Jõgeva maakond", "Lääne maakond", "Lääne-Viru maakond", "Pärnu maakond", "Põlva maakond", "Rapla maakond", "Saare maakond", "Tartu maakond", "Valga maakond", "Viljandi maakond", "Võru maakond"})
         Me.cbMaakond.Location = New System.Drawing.Point(608, 243)
         Me.cbMaakond.Name = "cbMaakond"
         Me.cbMaakond.Size = New System.Drawing.Size(191, 36)
         Me.cbMaakond.TabIndex = 32
-        '
-        'Guna2GradientCircleButton1
-        '
-        Me.Guna2GradientCircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientCircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientCircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
-        Me.Guna2GradientCircleButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
-        Me.Guna2GradientCircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer))
-        Me.Guna2GradientCircleButton1.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(186,Byte))
-        Me.Guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientCircleButton1.Location = New System.Drawing.Point(955, 565)
-        Me.Guna2GradientCircleButton1.Name = "Guna2GradientCircleButton1"
-        Me.Guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2GradientCircleButton1.Size = New System.Drawing.Size(82, 79)
-        Me.Guna2GradientCircleButton1.TabIndex = 63
-        Me.Guna2GradientCircleButton1.Text = "T↑"
-        '
-        'Guna2GradientCircleButton2
-        '
-        Me.Guna2GradientCircleButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientCircleButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientCircleButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
-        Me.Guna2GradientCircleButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
-        Me.Guna2GradientCircleButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer))
-        Me.Guna2GradientCircleButton2.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Bold)
-        Me.Guna2GradientCircleButton2.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientCircleButton2.Location = New System.Drawing.Point(1043, 565)
-        Me.Guna2GradientCircleButton2.Name = "Guna2GradientCircleButton2"
-        Me.Guna2GradientCircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2GradientCircleButton2.Size = New System.Drawing.Size(82, 79)
-        Me.Guna2GradientCircleButton2.TabIndex = 64
-        Me.Guna2GradientCircleButton2.Text = "T↓"
         '
         'formMaakondadeStatistika
         '

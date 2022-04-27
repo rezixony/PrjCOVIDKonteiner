@@ -55,7 +55,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="PrjCOVID">
-      <HintPath>..\PrjCOVID\bin\Debug\PrjCOVID.exe</HintPath>
+      <HintPath>..\PrjCOVID\bin\Release\PrjCOVID.exe</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -175,6 +175,9 @@
     </PackageReference>
     <PackageReference Include="LiveCharts.WinForms">
       <Version>0.9.7.1</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
