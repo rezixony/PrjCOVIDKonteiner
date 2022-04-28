@@ -1,8 +1,7 @@
 ﻿
 Public Class formKasutajaAken
-
-
-
+    'sellest aknast kasutajast visatakse valitud aknasse, kas Eesti statistikale, maakondade statistikale, Maailma statistikale,
+    'COVID infole, või rakendusest välja.
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Application.Exit()

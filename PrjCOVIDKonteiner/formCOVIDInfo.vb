@@ -1,11 +1,13 @@
 ﻿Public Class formCOVIDInfo
+    'kui vajutatakse nuppu teksti suurendamiseks
     Private Sub Guna2GradientCircleButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientCircleButton1.Click
-        
+        'kui tekstiväljade suurus on liiga suur, enam suuremaks teha ei saa
         If Guna2TextBox1.Size.Height > 85
             MsgBox("Ei saa enam suuremaks teha!")
             Exit Sub
         End If
 
+        'suurendame iga tekstivälja dimensioonid
         Guna2TextBox1.Size = New Size(Guna2TextBox1.Size.Width + 5, Guna2TextBox1.Size.Height + 5)
         Guna2TextBox2.Size = New Size(Guna2TextBox2.Size.Width + 5, Guna2TextBox2.Size.Height + 5)
         Guna2TextBox3.Size = New Size(Guna2TextBox3.Size.Width + 5, Guna2TextBox3.Size.Height + 5)
@@ -23,11 +25,14 @@
         Guna2TextBox15.Size = New Size(Guna2TextBox15.Size.Width + 5, Guna2TextBox15.Size.Height + 5)
     End Sub
 
+    'kui vajutatakse nuppu teksti väiksemaks tegemiseks
     Private Sub Guna2GradientCircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2GradientCircleButton2.Click
+        'kui tekstiväljade suurus on liiga väike, enam väiksemaks teha ei saa
         If Guna2TextBox1.Size.Height < 60
             MsgBox("Ei saa enam väiksemaks teha!")
             Exit Sub
         End If
+        'vähendame iga tekstivälja dimensioonid
         Guna2TextBox1.Size = New Size(Guna2TextBox1.Size.Width - 5, Guna2TextBox1.Size.Height - 5)
         Guna2TextBox2.Size = New Size(Guna2TextBox2.Size.Width - 5, Guna2TextBox2.Size.Height - 5)
         Guna2TextBox3.Size = New Size(Guna2TextBox3.Size.Width - 5, Guna2TextBox3.Size.Height - 5)

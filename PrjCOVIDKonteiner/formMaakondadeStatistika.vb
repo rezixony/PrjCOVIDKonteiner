@@ -8,6 +8,7 @@ Imports LiveCharts.Helpers
 
 Public Class formMaakondadeStatistika
     Private Sub formMaakondadeStatistika_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'esialgu vormi käivitamisel pole näha graafikut ja nakatanute arvu, kuna kuupäev pole veel valitud
         cbMaakond.SelectedIndex = 1
         lblDailyCasesMaakond.Visible = False
         _lblTotalCasesMaakond.Visible = False
@@ -17,26 +18,28 @@ Public Class formMaakondadeStatistika
 
 
     Private Sub btnLeiaMaakond_Click(sender As Object, e As EventArgs) Handles btnLeiaMaakond.Click
-        lblDailyCasesMaakond.Size = New Size(90, 70)
-
-
+        'tühjendame graafikut uue päringu esitamisel
         CartesianChartMaakond.AxisX.Clear()
         CartesianChartMaakond.AxisY.Clear()
         CartesianChartMaakond.Visible = False
 
-        If txtPaevadeArv.Text = Nothing Then
+        If txtPaevadeArv.Text = Nothing Or IsNumeric(txtPaevadeArv.Text) = False  Then
             MsgBox("Sisestage kuupäevade arv!")
             Exit Sub
         End If
 
-        If clndrKuupaev.Value >= Today Then
+        Dim arvutus As Date
+        arvutus = clndrKuupaev.Value.AddDays(CInt(txtPaevadeArv.Text))
+        'kui valitakse tänase või tuleviku kuupäeva, mille jaoks andmeid veel pole või soovitatakse kuvada andmeid perioodil, millal seda statistikat polnud veel 
+        'statistika esimene päev on 26. veebruar 2020
+        If clndrKuupaev.Value >= Today Or arvutus < ("27/02/2020")  Then
             MsgBox("Pole veel andmeid saadaval")
             lblDailyCasesMaakond.Visible = False
             lblTotalCasesMaakond.Visible = False
             Exit Sub
         End If
 
-        CartesianChartMaakond.Visible = True
+
 
         Dim time As Date = clndrKuupaev.Value
         Dim format As String = "yyyy-MM-dd"
@@ -46,30 +49,37 @@ Public Class formMaakondadeStatistika
         pooraja = New PrjCOVID.CCOVID
         pooraja.leiaArvS(kuupaev, cbMaakond.Text)
         'esimese päringu tulemuse(just selle päeva) saadame tekstina välja
-        lblDailyCasesMaakond.Visible = True
-        lblTotalCasesMaakond.Visible = True
+
         lblDailyCasesMaakond.Text = pooraja.DailyCases
         lblTotalCasesMaakond.Text = pooraja.TotalCases
+
+        'kui õige kuupäev ja andmed on käes, võib kuvada statistikat ja graafikut
+        CartesianChartMaakond.Visible = True
+        lblDailyCasesMaakond.Visible = True
+        lblTotalCasesMaakond.Visible = True
 
         'kasutaja sisestab, mitme paeva jaoks soovib graafikut kuvada
         Dim arv = CInt(txtPaevadeArv.Text)
         Dim times(arv) As String
         Dim j As Integer
+        'massiiv kuupäevadega
         For j = 0 To arv
             times(j) = time.AddDays(-j).ToString(format)
         Next j
 
         Dim k As Integer
         Dim saadud(arv) As Integer
+        'massiiv nakatanute arvuga
         For k = 0 To arv
             pooraja.leiaArvS(times(k), cbMaakond.Text)
             saadud(k) = pooraja.DailyCases
         Next k
 
+        'pöörame ümber, et graafikule saata õiges järjekorras
         Dim saadudGraafikule = saadud.Reverse()
         Dim timesGraafikule = times.Reverse()
 
-
+        'graafiku moodustamine
         CartesianChartMaakond.Series = New LiveCharts.SeriesCollection From {
             New LineSeries With {
                 .Title = "Nakatunud",
@@ -86,14 +96,15 @@ Public Class formMaakondadeStatistika
                                      })
     End Sub
 
+    'kui vajutatakse nuppu teksti suurendamiseks
     Private Sub Guna2GradientCircleButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientCircleButton1.Click
-
+        'kui tekstiväljade suurus on liiga suur, enam suuremaks teha ei saa
         If Guna2TextBox1.Size.Height > 85
             MsgBox("Ei saa enam suuremaks teha!")
             Exit Sub
         End If
 
-
+        'suurendame iga tekstivälja dimensioonid
         lblDailyCasesMaakond.Size = New Size(lblDailyCasesMaakond.Size.Width + 5, lblDailyCasesMaakond.Size.Height + 5)
         Guna2TextBox1.Size = New Size(Guna2TextBox1.Size.Width + 5, Guna2TextBox1.Size.Height + 5)
         Guna2TextBox2.Size = New Size(Guna2TextBox2.Size.Width + 5, Guna2TextBox2.Height + 5)
@@ -106,13 +117,15 @@ Public Class formMaakondadeStatistika
 
     End Sub
 
+    'kui vajutatakse nuppu teksti väiksemaks tegemiseks
     Private Sub Guna2GradientCircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2GradientCircleButton2.Click
-
+        'kui tekstiväljade suurus on liiga väike, enam väiksemaks teha ei saa
         If Guna2TextBox1.Size.Height < 60
             MsgBox("Ei saa enam väiksemaks teha!")
             Exit Sub
         End If
 
+        'vähendame iga tekstivälja dimensioonid
         lblDailyCasesMaakond.Size = New Size(lblDailyCasesMaakond.Size.Width - 5, lblDailyCasesMaakond.Size.Height - 5)
         Guna2TextBox1.Size = New Size(Guna2TextBox1.Size.Width - 5, Guna2TextBox1.Size.Height - 5)
         Guna2TextBox2.Size = New Size(Guna2TextBox2.Size.Width - 5, Guna2TextBox2.Height - 5)

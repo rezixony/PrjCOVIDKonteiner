@@ -7,8 +7,7 @@
     Property NextDay As Integer
 
     Sub leiaArvS(ByRef strSisendDate As String, ByRef strSisendMaakond As String)
-    Sub leiaArvEurope(ByRef strSisendRiik As String)
-
+    Sub leiaArvMaailm(ByRef strSisendRiik As String)
     Property location As String
     Property last_updated_date As String
     Property total_cases As Double

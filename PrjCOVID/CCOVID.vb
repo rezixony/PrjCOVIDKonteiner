@@ -123,6 +123,7 @@ Public Class CCOVID
         AntudDate = strSisendDate
         AntudMaakond = strSisendMaakond
 
+        'kui soovitakse andmeid Eesti kohta
         If strSisendMaakond = "Eesti" Then
             request = DirectCast(WebRequest.Create("https://opendata.digilugu.ee/opendata_covid19_tests_total.json"), HttpWebRequest)
             response = DirectCast(request.GetResponse(), HttpWebResponse)
@@ -138,7 +139,7 @@ Public Class CCOVID
 
             NextDayValue = foundItem.TotalCasesLast14D / 14
 
-
+            'kui soovitakse andmeid mingi maakonda kohta
         ElseIf strSisendMaakond IsNot "Eesti" Then
             request = DirectCast(WebRequest.Create("https://opendata.digilugu.ee/opendata_covid19_test_county_all.json"), HttpWebRequest)
             response = DirectCast(request.GetResponse(), HttpWebResponse)
@@ -156,7 +157,8 @@ Public Class CCOVID
 
     End Sub
 
-    Public Sub leiaArvEurope(ByRef strSisendRiik As String) Implements ICOVID.leiaArvEurope
+    'kui soovitakse andmeid teise riiki kohta
+    Public Sub leiaArvMaailm(ByRef strSisendRiik As String) Implements ICOVID.leiaArvMaailm
         AntudEuroopaRiik = strSisendRiik
 
         request = DirectCast(WebRequest.Create("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/latest/owid-covid-latest.json"), HttpWebRequest)
@@ -165,10 +167,13 @@ Public Class CCOVID
         Dim jsonStringWorld As String
         jsonStringWorld = reader.ReadToEnd()
 
+        'massiiv riikide nimetustega
         Dim WorldCountry() As String = {"Latvia", "Lithuania", "Poland", "Norway", "Finland", "Sweden", "Austria", "Belgium", "Bulgaria", "Croatia", "
 Cyprus", "Czechia", "Denmark", "France", "Germany", "Greece", "Hungary", "Ireland", "Italy", "Luxembourg", "Malta", "Netherlands", "Portugal", "Romania", "Slovakia", "Slovenia", "Spain", "Russia", "Greenland", "Mexico", "United States", "Egypt", "Cyprus", "Turkey", "China", "Japan", "India", "Ukraine", "Brazil", "Chile", "United Arab Emirates", "United Kingdom"}
+       'samas järjekorras nagu riikide massiivis nende riikide abbreviatuurid
         Dim WorldCountryAbbrev() As String = {"LVA", "LTU", "POL", "NOR", "FIN", "SWE", "AUT", "BEL", "BGR", "HRV", "CYP", "CZE", "DNK", "FRA", "DEU", "GRC", "HUN", "IRL", "ITA", "LUX", "MLT", "NLD", "PRT", "ROU", "SVK", "SVN", "ESP", "RUS", "GRL", "MEX", "USA", "EGY", "CYP", "TUR", "CHN", "JPN", "IND", "UKR", "BRA", "CHL", "ARE", "GBR"}
-
+        
+        'valitakse riiki massiivist, leitakse tema abbreviaatuur, selle järgi leiame andmed
         For i As Integer = 0 To 41
             If WorldCountry(i) = AntudEuroopaRiik Then
                 Dim objectList = JObject.Parse(jsonStringWorld)

@@ -24,6 +24,8 @@ Partial Class formEestiStatistika
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2GradientCircleButton2 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
+        Me.Guna2GradientCircleButton1 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.btnLeiaEesti = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.txtPaevadeArv = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
@@ -43,8 +45,6 @@ Partial Class formEestiStatistika
         Me.clndrKuupaev = New Guna.UI2.WinForms.Guna2DateTimePicker()
         Me.Guna2AnimateWindow1 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
         Me.Guna2AnimateWindow2 = New Guna.UI2.WinForms.Guna2AnimateWindow(Me.components)
-        Me.Guna2GradientCircleButton2 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
-        Me.Guna2GradientCircleButton1 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.Guna2Panel1.SuspendLayout
         Me.SuspendLayout
         '
@@ -73,6 +73,38 @@ Partial Class formEestiStatistika
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.Size = New System.Drawing.Size(1149, 671)
         Me.Guna2Panel1.TabIndex = 0
+        '
+        'Guna2GradientCircleButton2
+        '
+        Me.Guna2GradientCircleButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
+        Me.Guna2GradientCircleButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
+        Me.Guna2GradientCircleButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer))
+        Me.Guna2GradientCircleButton2.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Bold)
+        Me.Guna2GradientCircleButton2.ForeColor = System.Drawing.Color.White
+        Me.Guna2GradientCircleButton2.Location = New System.Drawing.Point(1043, 566)
+        Me.Guna2GradientCircleButton2.Name = "Guna2GradientCircleButton2"
+        Me.Guna2GradientCircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2GradientCircleButton2.Size = New System.Drawing.Size(82, 79)
+        Me.Guna2GradientCircleButton2.TabIndex = 66
+        Me.Guna2GradientCircleButton2.Text = "T↓"
+        '
+        'Guna2GradientCircleButton1
+        '
+        Me.Guna2GradientCircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
+        Me.Guna2GradientCircleButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
+        Me.Guna2GradientCircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer))
+        Me.Guna2GradientCircleButton1.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(186,Byte))
+        Me.Guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White
+        Me.Guna2GradientCircleButton1.Location = New System.Drawing.Point(955, 566)
+        Me.Guna2GradientCircleButton1.Name = "Guna2GradientCircleButton1"
+        Me.Guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2GradientCircleButton1.Size = New System.Drawing.Size(82, 79)
+        Me.Guna2GradientCircleButton1.TabIndex = 65
+        Me.Guna2GradientCircleButton1.Text = "T↑"
         '
         'btnLeiaEesti
         '
@@ -160,7 +192,7 @@ Partial Class formEestiStatistika
         Me.lblNextDay.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
         Me.lblNextDay.ForeColor = System.Drawing.Color.White
         Me.lblNextDay.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
-        Me.lblNextDay.Location = New System.Drawing.Point(1043, 347)
+        Me.lblNextDay.Location = New System.Drawing.Point(1045, 363)
         Me.lblNextDay.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.lblNextDay.Name = "lblNextDay"
         Me.lblNextDay.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -187,7 +219,7 @@ Partial Class formEestiStatistika
         Me.lblPerPopulation.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
         Me.lblPerPopulation.ForeColor = System.Drawing.Color.White
         Me.lblPerPopulation.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
-        Me.lblPerPopulation.Location = New System.Drawing.Point(1043, 263)
+        Me.lblPerPopulation.Location = New System.Drawing.Point(1045, 279)
         Me.lblPerPopulation.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.lblPerPopulation.Name = "lblPerPopulation"
         Me.lblPerPopulation.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -295,7 +327,7 @@ Partial Class formEestiStatistika
         Me.Guna2TextBox7.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2TextBox7.ForeColor = System.Drawing.Color.White
         Me.Guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
-        Me.Guna2TextBox7.Location = New System.Drawing.Point(867, 347)
+        Me.Guna2TextBox7.Location = New System.Drawing.Point(869, 363)
         Me.Guna2TextBox7.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Guna2TextBox7.Name = "Guna2TextBox7"
         Me.Guna2TextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -312,7 +344,7 @@ Partial Class formEestiStatistika
         Me.Guna2TextBox6.AutoRoundedCorners = true
         Me.Guna2TextBox6.BorderRadius = 29
         Me.Guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox6.DefaultText = "Per population:"
+        Me.Guna2TextBox6.DefaultText = "Elanikkonna kohta:"
         Me.Guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208,Byte),Integer), CType(CType(208,Byte),Integer), CType(CType(208,Byte),Integer))
         Me.Guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer))
         Me.Guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
@@ -322,7 +354,7 @@ Partial Class formEestiStatistika
         Me.Guna2TextBox6.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2TextBox6.ForeColor = System.Drawing.Color.White
         Me.Guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
-        Me.Guna2TextBox6.Location = New System.Drawing.Point(867, 263)
+        Me.Guna2TextBox6.Location = New System.Drawing.Point(831, 279)
         Me.Guna2TextBox6.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Guna2TextBox6.Name = "Guna2TextBox6"
         Me.Guna2TextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -330,7 +362,7 @@ Partial Class formEestiStatistika
         Me.Guna2TextBox6.PlaceholderText = ""
         Me.Guna2TextBox6.ReadOnly = true
         Me.Guna2TextBox6.SelectedText = ""
-        Me.Guna2TextBox6.Size = New System.Drawing.Size(152, 60)
+        Me.Guna2TextBox6.Size = New System.Drawing.Size(190, 60)
         Me.Guna2TextBox6.TabIndex = 51
         Me.Guna2TextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -458,7 +490,7 @@ Partial Class formEestiStatistika
         Me.Guna2TextBox1.ForeColor = System.Drawing.Color.White
         Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.Guna2TextBox1.Location = New System.Drawing.Point(319, 6)
-        Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(6, 6, 6, 6)
+        Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(6)
         Me.Guna2TextBox1.Name = "Guna2TextBox1"
         Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.Guna2TextBox1.PlaceholderText = ""
@@ -492,38 +524,6 @@ Partial Class formEestiStatistika
         Me.clndrKuupaev.Size = New System.Drawing.Size(245, 60)
         Me.clndrKuupaev.TabIndex = 30
         Me.clndrKuupaev.Value = New Date(2022, 4, 12, 0, 0, 0, 0)
-        '
-        'Guna2GradientCircleButton2
-        '
-        Me.Guna2GradientCircleButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientCircleButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientCircleButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
-        Me.Guna2GradientCircleButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
-        Me.Guna2GradientCircleButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer))
-        Me.Guna2GradientCircleButton2.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Bold)
-        Me.Guna2GradientCircleButton2.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientCircleButton2.Location = New System.Drawing.Point(1043, 566)
-        Me.Guna2GradientCircleButton2.Name = "Guna2GradientCircleButton2"
-        Me.Guna2GradientCircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2GradientCircleButton2.Size = New System.Drawing.Size(82, 79)
-        Me.Guna2GradientCircleButton2.TabIndex = 66
-        Me.Guna2GradientCircleButton2.Text = "T↓"
-        '
-        'Guna2GradientCircleButton1
-        '
-        Me.Guna2GradientCircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientCircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientCircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
-        Me.Guna2GradientCircleButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer), CType(CType(169,Byte),Integer))
-        Me.Guna2GradientCircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer), CType(CType(141,Byte),Integer))
-        Me.Guna2GradientCircleButton1.Font = New System.Drawing.Font("Segoe UI", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(186,Byte))
-        Me.Guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientCircleButton1.Location = New System.Drawing.Point(955, 566)
-        Me.Guna2GradientCircleButton1.Name = "Guna2GradientCircleButton1"
-        Me.Guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2GradientCircleButton1.Size = New System.Drawing.Size(82, 79)
-        Me.Guna2GradientCircleButton1.TabIndex = 65
-        Me.Guna2GradientCircleButton1.Text = "T↑"
         '
         'formEestiStatistika
         '
