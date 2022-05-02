@@ -161,7 +161,7 @@ Partial Class formMaakondadeStatistika
         Me.lblTotalCasesMaakond.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
         Me.lblTotalCasesMaakond.ForeColor = System.Drawing.Color.White
         Me.lblTotalCasesMaakond.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
-        Me.lblTotalCasesMaakond.Location = New System.Drawing.Point(1004, 233)
+        Me.lblTotalCasesMaakond.Location = New System.Drawing.Point(1029, 233)
         Me.lblTotalCasesMaakond.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.lblTotalCasesMaakond.Name = "lblTotalCasesMaakond"
         Me.lblTotalCasesMaakond.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -178,7 +178,7 @@ Partial Class formMaakondadeStatistika
         Me.Guna2TextBox4.AutoRoundedCorners = true
         Me.Guna2TextBox4.BorderRadius = 23
         Me.Guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox4.DefaultText = "Kokku:"
+        Me.Guna2TextBox4.DefaultText = "Nakatunud kokku:"
         Me.Guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208,Byte),Integer), CType(CType(208,Byte),Integer), CType(CType(208,Byte),Integer))
         Me.Guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer))
         Me.Guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
@@ -188,7 +188,7 @@ Partial Class formMaakondadeStatistika
         Me.Guna2TextBox4.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
         Me.Guna2TextBox4.ForeColor = System.Drawing.Color.White
         Me.Guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
-        Me.Guna2TextBox4.Location = New System.Drawing.Point(853, 233)
+        Me.Guna2TextBox4.Location = New System.Drawing.Point(807, 233)
         Me.Guna2TextBox4.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.Guna2TextBox4.Name = "Guna2TextBox4"
         Me.Guna2TextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -196,7 +196,7 @@ Partial Class formMaakondadeStatistika
         Me.Guna2TextBox4.PlaceholderText = ""
         Me.Guna2TextBox4.ReadOnly = true
         Me.Guna2TextBox4.SelectedText = ""
-        Me.Guna2TextBox4.Size = New System.Drawing.Size(123, 49)
+        Me.Guna2TextBox4.Size = New System.Drawing.Size(195, 49)
         Me.Guna2TextBox4.TabIndex = 56
         Me.Guna2TextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -215,7 +215,7 @@ Partial Class formMaakondadeStatistika
         Me.lblDailyCasesMaakond.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
         Me.lblDailyCasesMaakond.ForeColor = System.Drawing.Color.White
         Me.lblDailyCasesMaakond.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
-        Me.lblDailyCasesMaakond.Location = New System.Drawing.Point(224, 233)
+        Me.lblDailyCasesMaakond.Location = New System.Drawing.Point(324, 230)
         Me.lblDailyCasesMaakond.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.lblDailyCasesMaakond.Name = "lblDailyCasesMaakond"
         Me.lblDailyCasesMaakond.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -230,9 +230,9 @@ Partial Class formMaakondadeStatistika
         'kjlkj
         '
         Me.kjlkj.AutoRoundedCorners = true
-        Me.kjlkj.BorderRadius = 23
+        Me.kjlkj.BorderRadius = 22
         Me.kjlkj.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.kjlkj.DefaultText = "Nakatunud:"
+        Me.kjlkj.DefaultText = "Nakatunud sellel päeval:"
         Me.kjlkj.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208,Byte),Integer), CType(CType(208,Byte),Integer), CType(CType(208,Byte),Integer))
         Me.kjlkj.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer), CType(CType(226,Byte),Integer))
         Me.kjlkj.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer), CType(CType(138,Byte),Integer))
@@ -242,7 +242,7 @@ Partial Class formMaakondadeStatistika
         Me.kjlkj.Font = New System.Drawing.Font("Segoe UI", 13.75!, System.Drawing.FontStyle.Bold)
         Me.kjlkj.ForeColor = System.Drawing.Color.White
         Me.kjlkj.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94,Byte),Integer), CType(CType(148,Byte),Integer), CType(CType(255,Byte),Integer))
-        Me.kjlkj.Location = New System.Drawing.Point(72, 233)
+        Me.kjlkj.Location = New System.Drawing.Point(29, 233)
         Me.kjlkj.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
         Me.kjlkj.Name = "kjlkj"
         Me.kjlkj.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -250,7 +250,7 @@ Partial Class formMaakondadeStatistika
         Me.kjlkj.PlaceholderText = ""
         Me.kjlkj.ReadOnly = true
         Me.kjlkj.SelectedText = ""
-        Me.kjlkj.Size = New System.Drawing.Size(123, 49)
+        Me.kjlkj.Size = New System.Drawing.Size(252, 46)
         Me.kjlkj.TabIndex = 54
         Me.kjlkj.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
@@ -365,7 +365,7 @@ Partial Class formMaakondadeStatistika
         Me.cbMaakond.ForeColor = System.Drawing.Color.White
         Me.cbMaakond.ItemHeight = 30
         Me.cbMaakond.Items.AddRange(New Object() {"Harju maakond", "Hiiu maakond", "Ida-Viru maakond", "Järva maakond", "Jõgeva maakond", "Lääne maakond", "Lääne-Viru maakond", "Pärnu maakond", "Põlva maakond", "Rapla maakond", "Saare maakond", "Tartu maakond", "Valga maakond", "Viljandi maakond", "Võru maakond"})
-        Me.cbMaakond.Location = New System.Drawing.Point(608, 243)
+        Me.cbMaakond.Location = New System.Drawing.Point(591, 243)
         Me.cbMaakond.Name = "cbMaakond"
         Me.cbMaakond.Size = New System.Drawing.Size(191, 36)
         Me.cbMaakond.TabIndex = 32
